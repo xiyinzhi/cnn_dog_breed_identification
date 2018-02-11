@@ -1,3 +1,6 @@
+## Dog Breed Identification
+
+
 ### Description
 
 Who's a good dog? Who likes ear scratches? Well, it seems those fancy deep neural networks don't have all the answers. However, maybe they can answer that ubiquitous question we all ask when meeting a four-legged stranger: what kind of good pup is that?
@@ -12,4 +15,17 @@ We extend our gratitude to the creators of the Stanford Dogs Dataset for making 
 
 Submissions are evaluated on Multi Class Log Loss between the predicted probability and the observed target.
 
-### cnn_dog_breed_identification
+### Challenges
+
+1. Fine-grained classification problems 
+2. Data Imbalance & Small Amount                   
+3. Train set is almost as big as test set### Framework & Machine
+PyTorch 0.20
+EC2(Tesla K80 *1)
+
+### Our work
+
+1.Data balanced & data augmentation
+
+2.Use dog crops/Faster-RCNN to pre-train model of PASCAL_VOC(21 classes), to classify dogs from other animals3.Train 6 models:
+vgg16 + resnet50 + resnet101 + resnet152 + resnetinception__v2 + inception_ _v3
