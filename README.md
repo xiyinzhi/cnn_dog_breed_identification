@@ -28,4 +28,4 @@ PyTorch 0.20
 1.Data balanced & data augmentation
 
 2.Use dog crops/Faster-RCNN to pre-train model of PASCAL_VOC(21 classes), to classify dogs from other animals3.Train 6 models:
-vgg16 + resnet50 + resnet101 + resnet152 + resnetinception__v2 + inception_ _v3
+vgg16 + resnet50 + resnet101 + resnet152 + resnetinception_v2 + inception_v3
