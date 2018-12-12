@@ -19,13 +19,20 @@ Submissions are evaluated on Multi Class Log Loss between the predicted probabil
 
 1. Fine-grained classification problems 
 2. Data Imbalance & Small Amount                   
-3. Train set is almost as big as test set### Framework & Machine
+3. Train set is almost as big as test set
+
+### Framework & Machine
 PyTorch 0.20
-EC2(Tesla K80 *1)
+
+EC2(Tesla K80 *1)
 
 ### Our work
 
 1.Data balanced & data augmentation
 
-2.Use dog crops/Faster-RCNN to pre-train model of PASCAL_VOC(21 classes), to classify dogs from other animals3.Train 6 models:
-vgg16 + resnet50 + resnet101 + resnet152 + resnetinception_v2 + inception_v3
+2.Use dog crops/Faster-RCNN to pre-train model of PASCAL_VOC(21 classes), to classify dogs from other animals
+
+3.Train a models with 6 layers:
+
+vgg16 + resnet50 + resnet101 + resnet152 + resnetinception_v2 + inception_v3
+
